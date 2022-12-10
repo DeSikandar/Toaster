@@ -17,7 +17,7 @@ open class ToastView: UIView {
 
   // MARK: Appearance
 
-  open var height: CGFloat {
+  open dynamic var height: CGFloat {
     get { return self.backgroundView.frame.height }
     set { self.backgroundView.frame.size.height =  newValue }
   }
