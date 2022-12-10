@@ -17,6 +17,10 @@ open class ToastView: UIView {
 
   // MARK: Appearance
 
+  open var height: CGFloat {
+    get { return self.backgroundView.frame.height }
+    set { self.backgroundView.frame.size.height =  newValue }
+  }
   /// The background view's color.
   override open dynamic var backgroundColor: UIColor? {
     get { return self.backgroundView.backgroundColor }
